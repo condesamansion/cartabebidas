@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mensaje = document.getElementById("mensaje");
 
   const SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbxz1D-pWMmIEeUhkw_nUdsbXbgOfiZqx6VS_B1JEO1vAjdLNiGhFVIVo6Mo-FpN-vRB8Q/exec";
+    "https://script.google.com/macros/s/AKfycbzGQLiLp14T9RKC2b4HxRFfzA81H5p1sA40Ew68yUzzezOUuvDcw4m_j4t42lQwsSTI/exec";
 
   // Cargar productos en el select
   function cargarProductos() {
