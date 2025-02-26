@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const listaProductos = document.getElementById("listaProductos");
   const loading = document.getElementById("loading");
   const SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbxz1D-pWMmIEeUhkw_nUdsbXbgOfiZqx6VS_B1JEO1vAjdLNiGhFVIVo6Mo-FpN-vRB8Q/exec";
+    "https://script.google.com/macros/s/AKfycbzGQLiLp14T9RKC2b4HxRFfzA81H5p1sA40Ew68yUzzezOUuvDcw4m_j4t42lQwsSTI/exec";
 
   // Función para cargar los productos desde la base de datos
   function cargarProductos() {
