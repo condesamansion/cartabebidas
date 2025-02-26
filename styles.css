@@ -1,0 +1,265 @@
+/* ==================== ESTILOS GENERALES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo-container {
+    text-align: center; /* Centra el logo horizontalmente */
+    margin-bottom: -30px; /* Espacio entre el logo y el título */
+}
+
+.logo {
+    width: 13%; /* Tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+}
+
+/* Estilos para el logo en versión móvil */
+@media (max-width: 768px) {
+    .logo-container {
+        margin-bottom: -10; /* Espacio entre el logo y el título */
+    }
+
+    .logo {
+        width: 35%; /* Tamaño del logo */
+    }
+}
+
+@media (max-width: 1024px) {
+    .logo-container {
+        margin-bottom: -10; /* Espacio entre el logo y el título */
+    }
+    .logo {
+        width: 35%; /* Tamaño para tablets */
+    }
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 900; /* Negrita máxima */;
+    color: #000000;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Mensajes */
+.mensaje {
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.mensaje.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.mensaje.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Botones */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-secondary {
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #1a252f;
+}
+
+/* Navegación */
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Loading */
+.loading {
+    text-align: center;
+    margin: 20px 0;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+
+/* Estilos para el logo de fondo */
+.logo-fondo {
+    position: fixed; /* Fija el logo en la pantalla */
+    top: 50%; /* Lo coloca en el centro vertical */
+    left: 50%; /* Lo coloca en el centro horizontal */
+    transform: translate(-50%, -50%); /* Centra exactamente */
+    opacity: 0.05; /* Opacidad del 15% */
+    z-index: -1; /* Lo coloca detrás de todo el contenido */
+    pointer-events: none; /* Evita que el logo interfiera con clics */
+}
+
+.logo-fondo .logo {
+    width: 100%; /* Tamaño del logo de fondo */
+    height: auto; /* Mantiene la proporción */
+}
+
+@media (max-width: 1024px) {
+    .logo-fondo .logo {
+        width: 200%; /* Tamaño más pequeño para móviles */
+        height: auto; /* Mantiene la proporción */
+        transform: translate(-25%, -0%); /* Centra exactamente */
+    }
+}
+
+
+
+/* ==================== ESTILOS DE PÁGINA INDEX ==================== */
+/* Formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* ==================== ESTILOS DE PÁGINA CARTACONTROL Y CARTACLIENTE ==================== */
+/* Contenedor de la carta */
+.carta-container {
+   /* background-color: #ffffff;*/
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid de productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Tarjeta de producto */
+.producto {
+    background-color: #e0e0e0; /* Fondo ligeramente más oscuro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Nombre del producto */
+.producto h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    border-bottom: 1px solid #ccc; /* Línea divisoria */
+    padding-bottom: 5px;
+}
+
+/* Precios */
+.producto p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .btn-secondary {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

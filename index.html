@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Bebidas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <div class="container">
+	<!-- Logo del bar -->
+    <div class="logo-container">
+        <img src="img/logo.png" alt="Logo del Bar" class="logo">
+    </div>
+        <h1>Bebidas</h1>
+        <form id="productoForm">
+            <div class="form-group">
+                <label for="productosSelect">Seleccionar Producto:</label>
+                <select id="productosSelect">
+                    <option value="">-- Seleccionar Producto --</option>
+                    <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreProducto">Nombre del Producto:</label>
+                <input type="text" id="nombreProducto" required>
+            </div>
+            <div class="form-group">
+                <label for="precioVaso">Precio Vaso:</label>
+                <input type="number" id="precioVaso" step="0.01">
+            </div>
+            <div class="form-group">
+                <label for="precioJarra">Precio Jarra:</label>
+                <input type="number" id="precioJarra" step="0.01">
+            </div>
+            <div class="form-group">
+                <label for="precioCombo">Precio Combo:</label>
+                <input type="number" id="precioCombo" step="0.01">
+            </div>
+            <div class="form-group">
+                <label for="precioLata">Precio Lata:</label>
+                <input type="number" id="precioLata" step="0.01">
+            </div>
+            <div class="form-group">
+                <label for="precioBotellaCh">Precio Botella Chica:</label>
+                <input type="number" id="precioBotellaCh" step="0.01">
+            </div>
+            <div class="form-group">
+                <label for="precioBotella">Precio Botella:</label>
+                <input type="number" id="precioBotella" step="0.01">
+            </div>
+            <div class="buttons-container">
+                <button type="submit" id="confirmarBtn" class="btn btn-primary">Confirmar</button>
+                <button type="button" id="eliminarBtn" class="btn btn-danger">Eliminar Producto</button>
+            </div>
+        </form>
+        <div id="mensaje" class="mensaje"></div>
+        <div class="navigation">
+            <a href="cartacontrol.html" class="btn btn-secondary">Ver Carta (Control)</a>
+            <a href="cartacliente.html" class="btn btn-secondary">Ver Carta (Cliente)</a>
+        </div>
+    </div>
+    <!-- Logo de fondo -->
+    <div class="logo-fondo">
+        <img src="img/logo.png" alt="Logo del Bar" class="logo">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Bebidas - Control</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <div class="container carta-container">
+	<!-- Logo del bar -->
+    <div class="logo-container">
+        <img src="img/logo.png" alt="Logo del Bar" class="logo">
+    </div>
+        <h1>Carta de acceso privado</h1>
+        <div id="listaProductos" class="productos-grid">
+            <!-- Los productos se cargarán dinámicamente desde JavaScript -->
+        </div>
+        <div class="loading" id="loading">Cargando productos...</div>
+        <div class="navigation">
+            <a href="index.html" class="btn btn-primary">Modificar Productos</a>
+        </div>
+    </div>
+    <!-- Logo de fondo -->
+    <div class="logo-fondo">
+        <img src="img/logo.png" alt="Logo del Bar" class="logo">
+    </div>
+    <script src="cartacontrol.js"></script>
+</body>
+</html>
